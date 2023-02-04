@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F7F7FF;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+    color: #352208;
+}
+
+header {
+    background-color: #ECE4B7;
+}
+
+h1 {
+    text-align: left;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+
+
+nav ul a {
+    color: #352208;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 50px;
+    overflow: hidden;
+    opacity: 0.7;
+}
+.menu a{
+    transition:all .9 ease;
+}
+.menu a:hover{
+   opacity: 100;
+   transform:scale(1.20);
+}
+
+.menu ul {
+    color: #352208;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 50px;
+    /*display: inline-block;
+    justify-content:flex-end;*/
+
+}
+
+.logos{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    overflow: hidden;
+}
+.logos a img{
+    transition:all .9 ease;
+}
+.logos a img:hover{
+    transform:scale(1.20);
+}
+
+h2{
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+.promo {
+    padding: auto;
+    margin: 2px auto;
+    justify-content: space-evenly;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: repeat(1 1fr);
+    grid-template-areas: "promociones servicios ubicacion";
+}
+
+.promociones {
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: promociones;
+    padding: 1rem;
+}
+.promociones a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.servicios {
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: servicios;
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+.servicios a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.ubicacion {
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: ubicacion;
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+main div a h3{ 
+    color: #352208;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3 {
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+iframe {
+    display: flex;
+}
+
+.subtitulos{
+    text-align: center;
+}
+
+.personas {
+    padding: auto;
+    margin: 2px auto;
+    justify-content: space-evenly;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: repeat(1 1fr);
+    grid-template-areas: "dosper cuatroper seisper";
+}
+
+.dosper {
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: dosper;
+    padding: 1rem;
+
+}
+
+.cuatroper {
+
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: cuatroper;
+    padding: 1rem;
+}
+
+.seisper {
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: seisper;
+    padding: 1rem;
+}
+
+.descuentos{
+    padding: auto;
+    margin: 2px auto;
+    justify-content: space-evenly;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: repeat(1 1fr);
+    grid-template-areas: "finde tempbaja tempalta";
+
+}
+.finde{
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: finde;
+    padding: 1rem;
+
+}
+.tempbaja{
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: tempbaja;
+    padding: 1rem;
+}
+.tempalta{
+    background-color: #8BB174;
+    border-radius: 8px;
+    grid-area: tempalta;
+    padding: 1rem;
+}
+
+footer{
+    justify-content: left;
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        display: list-item;
+        align-items: center;
+    }
+
+    .promo {
+        grid-template-areas:
+            "promociones"
+            "servicios"
+            "ubicacion"
+    }
+    .personas{
+        grid-template-areas:
+        "dosper"
+        "cuatroper"
+        "seisper";
+    }
+    .descuentos{
+        grid-template-areas:
+        "finde" 
+        "tempbaja" 
+        "tempalta";
+    }
+
+}
+@media screen and (min-widht: 961px) {
+    
+}
