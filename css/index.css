@@ -13,6 +13,8 @@ body {
 
 header {
     background-color: #ECE4B7;
+    grid-area: header;
+
 }
 
 h1 {
@@ -29,8 +31,6 @@ nav ul li {
     display: inline-flex;
     justify-content: space-evenly;
 }
-
-
 
 nav ul li a {
     color: #352208;
@@ -83,15 +83,16 @@ h2 {
 }
 
 .promo {
-    padding: auto;
-    margin: auto;
+    padding: 10px auto;
+    margin: 10px auto;
     justify-content: space-evenly;
     display: grid;
     gap: 10px;
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row: repeat(3 1fr);
     grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "promociones servicios ubicacion";
+    grid-template-areas: "promociones servicios ubicacion"
+    "footer footer footer";
 }
 
 .promociones {
@@ -156,6 +157,20 @@ h2 {
     text-decoration: none;
     list-style: none;
     align-items: center;
+    transition: all .9 ease;
+}
+.ubicacion a{
+    color: #352208;
+    text-decoration: none;
+    list-style: none;
+    transition: all .9 ease;
+    opacity: 0.7;
+}
+.ubicacion a:hover{
+    opacity: 100;
+}
+.ubicacion a h2:hover{
+    transform: scale(1.20);
 }
 
 main div a h3 {
@@ -171,10 +186,12 @@ h3 {
 
 iframe {
     display: flex;
+    align-items: center;
 }
 
 .subtitulos {
     text-align: center;
+    align-items: center;
 }
 
 .personas {
@@ -190,7 +207,8 @@ iframe {
     grid-auto-rows: minmax(100px, auto);
     grid-template-columns: 4fr 4fr 4fr;
     grid-row: repeat(3 1fr);
-    grid-template-areas: "dosper cuatroper seisper";
+    grid-template-areas: "dosper cuatroper seisper"
+    "footer footer footer";
 }
 
 .dosper {
@@ -249,8 +267,13 @@ iframe {
     grid-area: tempalta;
     padding: 1rem;
 }
+.contacto{
+    margin: 1rem auto;
+    padding: 1rem auto;
+}
 
 footer {
+    grid-area: footer;
     justify-content: left;
 }
 
@@ -259,11 +282,13 @@ footer {
         display: list-item;
         align-items: column;
     }
-
     .menu ul il{
-        align-items: column;
+            display: list-item;
+            align-items: column;
 
     }
+
+  
 
     .promo {
         align-content: center;
