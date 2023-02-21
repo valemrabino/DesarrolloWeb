@@ -29,6 +29,7 @@ nav {
 nav ul li {
     list-style: none;
     padding: 10px;
+    margin: 10px;
     display: inline-flex;
     justify-content: space-evenly;
 }
@@ -86,8 +87,8 @@ h2 {
 
 
 .promo {
-    padding: auto;
-    margin: 20px auto;
+    padding: 20px;
+    margin: 20px;
     justify-content: space-evenly;
     display: grid;
     gap: 20px;
@@ -154,6 +155,11 @@ h2 {
     transform: scale(1.20);
 }
 
+.servicios img{
+    align-items: center;
+    justify-content: center;
+}
+
 .ubicacion {
     background-color: #8BB174;
     border-radius: 8px;
@@ -207,16 +213,16 @@ iframe {
 .personas {
     width: auto;
     height: auto;
-    padding: auto;
-    margin: 2px auto;
+    padding: 20px;
+    margin: 0 auto;
     justify-content: space-evenly;
     display: grid;
     align-items: center;
     align-content: center;
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-row: repeat(3 1fr);
+    grid-template-columns: 1fr 1fr fr;
+    grid-row: 1fr 1fr;
     grid-template-areas: "dosper cuatroper seisper"
         "footer footer footer";
 }
@@ -277,10 +283,22 @@ iframe {
     grid-area: tempalta;
     padding: 1rem;
 }
+.subcontacto{
+    text-align: center;
+}
+.contacto{
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
 
-.contacto {
-    margin: 1rem auto;
-    padding: 1rem auto;
+}
+.fondovcp{
+   justify-content: center;
+ 
+}
+.imagenes{
+    display: contents;
+    justify-content: center;
 }
 
 footer {
@@ -290,7 +308,14 @@ footer {
     
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 910px) {
+
+    nav ul li {
+        list-style: none;
+        padding: 10px;
+        display: list-item;
+        align-items: center;
+    }
     .menu ul {
         display: list-item;
         align-items: column;
@@ -306,9 +331,14 @@ footer {
 
 
     .promo {
+        padding: 5px;
+        margin-left: 5px;
         align-content: center;
         align-items: center;
         justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
         grid-template-areas:
             "promociones"
             "servicios"
