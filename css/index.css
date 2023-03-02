@@ -220,9 +220,8 @@ iframe {
     align-items: center;
     align-content: center;
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: 1fr 1fr fr;
-    grid-row: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "dosper cuatroper seisper"
         "footer footer footer";
 }
@@ -297,14 +296,125 @@ iframe {
  
 }
 
+.imagenes .carousel-inner{
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    padding: 20px;
+    margin: 10px;
+}
+
 footer {
-    background-color: #8bb17481;
+    background-color: #F1CB7E;
+    border-radius: 11px;
     grid-area: footer;
     text-align: center;
     
 }
 
 @media screen and (max-width: 910px) {
+
+    nav ul li {
+        list-style: none;
+        padding: 10px;
+        display: list-item;
+        align-items: center;
+    }
+    .menu ul {
+        display: list-item;
+        align-items: column;
+        text-align: center;
+    }
+
+    .menu ul il {
+        display: list-item;
+        align-items: column;
+
+    }
+
+
+
+    .promo {
+        padding: 10px auto;
+        margin: 20 px auto;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px;
+        grid-template-areas:
+            "promociones"
+            "servicios"
+            "ubicacion"
+        
+    }
+    .promociones{
+        text-decoration: none;
+        list-style: none;
+        padding: 20px;
+        margin: 30px;
+    }
+    .servicios{
+        text-decoration: none;
+        list-style: none;
+        padding: 20px;
+        margin: 30px;
+    }
+    .ubicacion{
+        text-decoration: none;
+        list-style: none;
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .personas {
+        text-decoration: none;
+        list-style: none;
+        align-content: center;
+        align-items: center;
+        grid-template-areas:
+            "dosper dosper dosper"
+            "cuatroper cuatroper cuatroper"
+            "seisper seisper seisper";
+    }
+
+    .descuentos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2px;
+        grid-template-areas:
+            "finde finde"
+            "tempbaja tempbaja"
+            "tempalta tempalta";
+            align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .finde{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .tempalta{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .tempbaja{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 476px){
 
     nav ul li {
         list-style: none;
@@ -334,12 +444,27 @@ footer {
         justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 1px;
         grid-template-areas:
             "promociones"
             "servicios"
             "ubicacion"
+        
     }
+        
+    .promociones{
+        padding: 10px;
+        margin: 5px;
+        justify-content: center;
+    }
+    .servicios{
+        padding: 10px ;
+        margin: 5px ;
+    }
+    .ubicacion{
+        padding: 10px ;
+        margin: 5px ;
+        }
 
     .personas {
         align-content: center;
@@ -351,12 +476,33 @@ footer {
     }
 
     .descuentos {
-        align-content: center;
-        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2px;
         grid-template-areas:
             "finde finde"
             "tempbaja tempbaja"
             "tempalta tempalta";
+            align-content: center;
+        align-items: center;
+        justify-content: center;
     }
-
+    .finde{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .tempalta{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .tempbaja{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
