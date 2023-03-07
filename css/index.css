@@ -86,7 +86,7 @@ h2 {
 }
 
 
-.pro {
+.promos{
     padding: 20px;
     margin: 20px;
     justify-content: space-evenly;
@@ -335,11 +335,7 @@ footer {
 
 
 
-    .pro {
-        width: auto;
-        height: auto;
-        padding: 20px;
-        margin: 0 auto;
+    .promos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 2px;
@@ -438,11 +434,7 @@ footer {
 
 
 
-    .pro {
-        width: auto;
-        height: auto;
-        padding: 20px;
-        margin: 0 auto;
+    .promos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 2px;
