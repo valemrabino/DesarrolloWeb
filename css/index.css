@@ -230,7 +230,7 @@ iframe {
     background-color: #8BB174;
     border-radius: 8px;
     grid-area: dosper;
-    padding: 1rem;
+    padding: 20px;
 
 }
 
@@ -239,19 +239,19 @@ iframe {
     background-color: #8BB174;
     border-radius: 8px;
     grid-area: cuatroper;
-    padding: 1rem;
+    padding: 20px;
 }
 
 .seisper {
     background-color: #8BB174;
     border-radius: 8px;
     grid-area: seisper;
-    padding: 1rem;
+    padding: 20px;
 }
 
 .descuentos {
     padding: auto;
-    margin: 2px auto;
+    margin: 20px;
     justify-content: space-evenly;
     display: grid;
     gap: 10px;
@@ -293,10 +293,18 @@ iframe {
     align-items: center;
 
 }
+.descripcion{
+    padding: 2px;
+    margin:20px;
+}
 
-.imagenes .carousel-inner {
+.imgservi {
+    padding: 20px;
+    margin: 60px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .texto {
