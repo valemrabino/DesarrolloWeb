@@ -86,7 +86,7 @@ h2 {
 }
 
 
-.promo {
+.pro {
     padding: 20px;
     margin: 20px;
     justify-content: space-evenly;
@@ -96,7 +96,7 @@ h2 {
     grid-row: repeat(3 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: "promociones promociones ubicacion"
-     "servicios servicios ubicacion"
+        "servicios servicios ubicacion"
         "footer footer footer";
 }
 
@@ -155,7 +155,7 @@ h2 {
     transform: scale(1.20);
 }
 
-.servicios img{
+.servicios img {
     align-items: center;
     justify-content: center;
 }
@@ -282,26 +282,24 @@ iframe {
     grid-area: tempalta;
     padding: 1rem;
 }
-.subcontacto{
+
+.subcontacto {
     text-align: center;
 }
-.contacto{
+
+.contacto {
     margin: 20px;
     padding: 20px;
     align-items: center;
 
 }
-.fondovcp{
-   justify-content: center;
- 
-}
 
-.imagenes .carousel-inner{
+.imagenes .carousel-inner {
     justify-content: center;
     align-items: center;
 }
 
-.texto{
+.texto {
     padding: 20px;
     margin: 10px;
 }
@@ -311,7 +309,7 @@ footer {
     border-radius: 11px;
     grid-area: footer;
     text-align: center;
-    
+
 }
 
 @media screen and (max-width: 910px) {
@@ -322,6 +320,7 @@ footer {
         display: list-item;
         align-items: center;
     }
+
     .menu ul {
         display: list-item;
         align-items: column;
@@ -336,38 +335,37 @@ footer {
 
 
 
-    .promo {
-        padding: 10px auto;
-        margin: 20 px auto;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    .pro {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 1px;
+        gap: 2px;
         grid-template-areas:
             "promociones"
             "servicios"
-            "ubicacion"
-        
+            "ubicacion";
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
     }
-    .promociones{
+
+    .promociones {
         text-decoration: none;
         list-style: none;
-        padding: 20px;
-        margin: 30px;
     }
-    .servicios{
+
+    .servicios {
         text-decoration: none;
         list-style: none;
-        padding: 20px;
-        margin: 30px;
     }
-    .ubicacion{
+
+    .ubicacion {
         text-decoration: none;
         list-style: none;
-        padding: 20px;
-        margin: 30px;
     }
 
     .personas {
@@ -389,21 +387,24 @@ footer {
             "finde finde"
             "tempbaja tempbaja"
             "tempalta tempalta";
-            align-content: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .finde{
         align-content: center;
         align-items: center;
         justify-content: center;
     }
-    .tempalta{
+
+    .finde {
         align-content: center;
         align-items: center;
         justify-content: center;
     }
-    .tempbaja{
+
+    .tempalta {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tempbaja {
         align-content: center;
         align-items: center;
         justify-content: center;
@@ -414,7 +415,7 @@ footer {
 
 
 
-@media screen and (max-width: 476px){
+@media screen and (max-width: 476px) {
 
     nav ul li {
         list-style: none;
@@ -422,6 +423,7 @@ footer {
         display: list-item;
         align-items: center;
     }
+
     .menu ul {
         display: list-item;
         align-items: column;
@@ -436,35 +438,22 @@ footer {
 
 
 
-    .promo {
-        padding: 10px;
-        margin: 10px;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    .pro {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 1px;
+        gap: 2px;
         grid-template-areas:
             "promociones"
             "servicios"
-            "ubicacion"
-        
-    }
-        
-    .promociones{
-        padding: 10px;
-        margin: 5px;
+            "ubicacion";
+        align-content: center;
+        align-items: center;
         justify-content: center;
     }
-    .servicios{
-        padding: 10px ;
-        margin: 5px ;
-    }
-    .ubicacion{
-        padding: 10px ;
-        margin: 5px ;
-        }
 
     .personas {
         align-content: center;
@@ -485,24 +474,26 @@ footer {
             "finde finde"
             "tempbaja tempbaja"
             "tempalta tempalta";
-            align-content: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .finde{
         align-content: center;
         align-items: center;
         justify-content: center;
     }
-    .tempalta{
+
+    .finde {
         align-content: center;
         align-items: center;
         justify-content: center;
     }
-    .tempbaja{
+
+    .tempalta {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tempbaja {
         align-content: center;
         align-items: center;
         justify-content: center;
     }
 }
-
